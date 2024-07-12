@@ -17,10 +17,11 @@ opusmodelname="opusTCv20230926max50+bt+jhubc.spm32k-spm32k.transformer-big.model
 vocab="opusTCv20230926max50+bt+jhubc.spm32k-spm32k.vocab.yml"
 
 # Output model
-modeldir="models/opus+bibles_ft_all"
+modeldir="models/opus+bibles_ft_all_2_bleu"
 datadir="data/train"
 
-mkdir $modeldir
+mkdir -p $modeldir
+mkdir -p ${modeldir}/valid_logs
 
 # Marian
 MARIAN="/scratch/project_2005815/degibert/marian-dev/build"
@@ -36,15 +37,15 @@ ${MARIAN}/marian --model "${modeldir}/model.npz" \
        --task transformer-big \
        --optimizer-delay 2 \
        --early-stopping 10 \
-       --valid-freq 10000 \
-       --valid-metrics perplexity ce-mean-words bleu \
+       --valid-freq 2500 \
+       --valid-metrics bleu perplexity ce-mean-words \
        --valid-mini-batch 16 \
        --beam-size 6 \
        --normalize 1 \
        --allow-unk \
        --workspace 25000 \
-       --save-freq 10000 \
-       --disp-freq 10000 \
+       --save-freq 2500 \
+       --disp-freq 2500 \
        --devices 0 1 2 3 \
        --seed 1111 \
        --shuffle batches \

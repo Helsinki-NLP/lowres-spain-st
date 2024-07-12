@@ -1,0 +1,11 @@
+normalize: 1.0
+word-penalty: 0
+mini-batch: 512
+maxi-batch: 1000
+maxi-batch-sort: src
+max-length: 200
+max-length-crop: true
+beam-size: 8
+quiet-translation: true
+precision: float16
+log-level: debug
