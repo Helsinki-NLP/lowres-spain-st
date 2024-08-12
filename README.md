@@ -24,7 +24,7 @@ All our code is in the `scripts` folder.
 
 The training data can be safely downloaded from this link: https://a3s.fi/degibert-2001194-pub/lowres-spain-data.zip
 
-It is password protected. We will release the password after July 15th.
+The password is "Helsinki-NLP".
 
 ## Citation
 
