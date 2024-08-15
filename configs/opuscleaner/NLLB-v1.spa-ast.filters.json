@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "files": [
+    "NLLB-v1.spa-ast.ast.gz",
+    "NLLB-v1.spa-ast.spa.gz"
+  ],
+  "filters": [
+    {
+      "filter": "src_trg_ratio",
+      "parameters": {
+        "RATIO": "0.7",
+        "LOG": false
+      },
+      "language": null
+    },
+    {
+      "filter": "num_mismatch",
+      "parameters": {
+        "RATIO": 1,
+        "DEBUG": false
+      },
+      "language": null
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "files": [
+    "wikipedia.spa-ara.ara.gz",
+    "wikipedia.spa-ara.spa.gz"
+  ],
+  "filters": [
+    {
+      "filter": "regexp",
+      "parameters": {
+        "PATTERN": "s/(\\[\\[)|(\\]\\])//g"
+      },
+      "language": "ara,spa"
+    },
+    {
+      "filter": "regexp",
+      "parameters": {
+        "PATTERN": "s/.*[\\[\\]].*//g"
+      },
+      "language": "ara,spa"
+    },
+    {
+      "filter": "regexp",
+      "parameters": {
+        "PATTERN": "s/\\<.*?\\>//g"
+      },
+      "language": "ara,spa"
+    },
+    {
+      "filter": "regexp",
+      "parameters": {
+        "PATTERN": "s/\\{+.*?\\}+//g"
+      },
+      "language": "ara,spa"
+    },
+    {
+      "filter": "alpha_ratio",
+      "parameters": {
+        "LANG1": "es",
+        "LANG2": "es",
+        "SRCWORDRAT": 0.4,
+        "TRGWORDRAT": 0.4,
+        "SRCALPHARAT": 0.5,
+        "TRGALPHARAT": 0.5,
+        "DEBUG": false
+      },
+      "language": null
+    },
+    {
+      "filter": "src_trg_ratio",
+      "parameters": {
+        "RATIO": 0.6,
+        "LOG": false
+      },
+      "language": null
+    },
+    {
+      "filter": "num_mismatch",
+      "parameters": {
+        "RATIO": 1,
+        "DEBUG": false
+      },
+      "language": null
+    }
+  ]
+}

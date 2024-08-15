@@ -1,0 +1,429 @@
+common:
+    output_directory: data/train-parts
+
+steps:
+    # Aranese
+    - type: concatenate
+      parameters:
+          inputs: 
+              - CCMatrix-v1.spa-ara.filters.ara
+              - GNOME-v1.spa-ara.filters.ara
+              - KDE4-v2.spa-ara.filters.ara
+              - Mozilla-I10n-v1.spa-ara.filters.ara
+              - NLLB-v1.spa-ara.filters.ara
+              - QED-v2.0a.spa-ara.filters.ara
+              - TED2020-v1.spa-ara.filters.ara
+              - Ubuntu-v14.10.spa-ara.filters.ara
+              - WikiMatrix-v1.spa-ara.filters.ara
+              - wikimedia-v20210402.spa-ara.filters.ara
+              - wikimedia-v20230407.spa-ara.filters.ara
+              - XLEnt-v1.1.spa-ara.filters.ara
+              - XLEnt-v1.2.spa-ara.filters.ara
+          output: tatoeba.spa-ara.ara 
+
+    - type: concatenate
+      parameters:
+          inputs: 
+              - crawled.spa-ara.filters.ara
+              - literary.spa-ara.filters.ara
+              - wiki_discussions.spa-ara.filters.ara
+              - wikipedia.spa-ara.filters.ara
+          output: synt.spa-ara.ara
+
+    - type: concatenate
+      parameters:
+          inputs: 
+              - CCMatrix-v1.spa-ara.filters.spa
+              - GNOME-v1.spa-ara.filters.spa
+              - KDE4-v2.spa-ara.filters.spa
+              - Mozilla-I10n-v1.spa-ara.filters.spa
+              - NLLB-v1.spa-ara.filters.spa
+              - QED-v2.0a.spa-ara.filters.spa
+              - TED2020-v1.spa-ara.filters.spa
+              - Ubuntu-v14.10.spa-ara.filters.spa
+              - WikiMatrix-v1.spa-ara.filters.spa
+              - wikimedia-v20210402.spa-ara.filters.spa
+              - wikimedia-v20230407.spa-ara.filters.spa
+              - XLEnt-v1.1.spa-ara.filters.spa
+              - XLEnt-v1.2.spa-ara.filters.spa
+          output: tatoeba.spa-ara.spa 
+
+    - type: concatenate
+      parameters:
+          inputs: 
+              - crawled.spa-ara.filters.spa
+              - literary.spa-ara.filters.spa
+              - wiki_discussions.spa-ara.filters.spa
+              - wikipedia.spa-ara.filters.spa
+          output: synt.spa-ara.spa
+
+    # Aragonese
+    - type: concatenate
+      parameters:
+          inputs: 
+              - GNOME-v1.spa-arg.filters.arg
+              - Mozilla-I10n-v1.spa-arg.filters.arg
+              - QED-v2.0a.spa-arg.filters.arg
+              - Ubuntu-v14.10.spa-arg.filters.arg
+              - WikiMatrix-v1.spa-arg.filters.arg
+              - wikimedia-v20210402.spa-arg.filters.arg
+              - wikimedia-v20230407.spa-arg.filters.arg
+              - XLEnt-v1.1.spa-arg.filters.arg
+              - XLEnt-v1.2.spa-arg.filters.arg
+          output: tatoeba.spa-arg.arg
+
+    - type: concatenate
+      parameters:
+          inputs: 
+              - crawled.spa-arg.filters.arg
+              - literary.spa-arg.filters.arg
+              - wikipedia.spa-arg.filters.arg
+          output: synt.spa-arg.arg
+
+    - type: concatenate
+      parameters:
+          inputs: 
+              - GNOME-v1.spa-arg.filters.spa
+              - Mozilla-I10n-v1.spa-arg.filters.spa
+              - QED-v2.0a.spa-arg.filters.spa
+              - Ubuntu-v14.10.spa-arg.filters.spa
+              - WikiMatrix-v1.spa-arg.filters.spa
+              - wikimedia-v20210402.spa-arg.filters.spa
+              - wikimedia-v20230407.spa-arg.filters.spa
+              - XLEnt-v1.1.spa-arg.filters.spa
+              - XLEnt-v1.2.spa-arg.filters.spa
+          output: tatoeba.spa-arg.spa
+
+    - type: concatenate
+      parameters:
+          inputs: 
+              - crawled.spa-arg.filters.spa
+              - literary.spa-arg.filters.spa
+              - wikipedia.spa-arg.filters.spa
+          output: synt.spa-arg.spa
+
+    # Asturian
+    - type: concatenate
+      parameters:
+          inputs: 
+              - CCMatrix-v1.spa-ast.filters.ast
+              - GNOME-v1.spa-ast.filters.ast
+              - KDE4-v2.spa-ast.filters.ast
+              - Mozilla-I10n-v1.spa-ast.filters.ast
+              - NLLB-v1.spa-ast.filters.ast
+              - QED-v2.0a.spa-ast.filters.ast
+              - TED2020-v1.spa-ast.filters.ast
+              - Ubuntu-v14.10.spa-ast.filters.ast
+              - wikimedia-v20210402.spa-ast.filters.ast
+              - wikimedia-v20230407.spa-ast.filters.ast
+              - XLEnt-v1.1.spa-ast.filters.ast
+              - XLEnt-v1.2.spa-ast.filters.ast
+          output: tatoeba.spa-ast.ast
+
+    - type: concatenate
+      parameters:
+          inputs: 
+              - crawled.spa-ast.filters.ast
+              - literary.spa-ast.filters.ast
+              - wikipedia.spa-ast.filters.ast
+          output: synt.spa-ast.ast
+
+    - type: concatenate
+      parameters:
+          inputs: 
+              - CCMatrix-v1.spa-ast.filters.spa
+              - GNOME-v1.spa-ast.filters.spa
+              - KDE4-v2.spa-ast.filters.spa
+              - Mozilla-I10n-v1.spa-ast.filters.spa
+              - NLLB-v1.spa-ast.filters.spa
+              - QED-v2.0a.spa-ast.filters.spa
+              - TED2020-v1.spa-ast.filters.spa
+              - Ubuntu-v14.10.spa-ast.filters.spa
+              - wikimedia-v20210402.spa-ast.filters.spa
+              - wikimedia-v20230407.spa-ast.filters.spa
+              - XLEnt-v1.1.spa-ast.filters.spa
+              - XLEnt-v1.2.spa-ast.filters.spa
+          output: tatoeba.spa-ast.spa
+
+    - type: concatenate
+      parameters:
+          inputs: 
+              - crawled.spa-ast.filters.spa
+              - literary.spa-ast.filters.spa
+              - wikipedia.spa-ast.filters.spa
+          output: synt.spa-ast.spa
+
+    # Occitan
+    - type: concatenate
+      parameters:
+          inputs: 
+              - CCMatrix-v1.spa-oci.filters.oci
+              - GNOME-v1.spa-oci.filters.oci
+              - KDE4-v2.spa-oci.filters.oci
+              - Mozilla-I10n-v1.spa-oci.filters.oci
+              - NLLB-v1.spa-oci.filters.oci
+              - QED-v2.0a.spa-oci.filters.oci
+              - Ubuntu-v14.10.spa-oci.filters.oci
+              - WikiMatrix-v1.spa-oci.filters.oci
+              - wikimedia-v20210402.spa-oci.filters.oci
+              - wikimedia-v20230407.spa-oci.filters.oci
+              - XLEnt-v1.1.spa-oci.filters.oci
+              - XLEnt-v1.2.spa-oci.filters.oci
+          output: tatoeba.spa-oci.oci
+
+    - type: concatenate
+      parameters:
+          inputs: 
+              - literary.spa-oci.filters.oci
+              - wiki_discussions.spa-oci.filters.oci
+              - wikipedia.spa-oci.filters.oci
+          output: synt.spa-oci.oci
+
+    - type: concatenate
+      parameters:
+          inputs: 
+              - CCMatrix-v1.spa-oci.filters.spa
+              - GNOME-v1.spa-oci.filters.spa
+              - KDE4-v2.spa-oci.filters.spa
+              - Mozilla-I10n-v1.spa-oci.filters.spa
+              - NLLB-v1.spa-oci.filters.spa
+              - QED-v2.0a.spa-oci.filters.spa
+              - Ubuntu-v14.10.spa-oci.filters.spa
+              - WikiMatrix-v1.spa-oci.filters.spa
+              - wikimedia-v20210402.spa-oci.filters.spa
+              - wikimedia-v20230407.spa-oci.filters.spa
+              - XLEnt-v1.1.spa-oci.filters.spa
+              - XLEnt-v1.2.spa-oci.filters.spa
+          output: tatoeba.spa-oci.spa
+
+    - type: concatenate
+      parameters:
+          inputs: 
+              - literary.spa-oci.filters.spa
+              - wiki_discussions.spa-oci.filters.spa
+              - wikipedia.spa-oci.filters.spa
+          output: synt.spa-oci.spa
+
+    # Deduplicate
+    - type: remove_duplicates
+      parameters:
+          inputs: [tatoeba.spa-ara.spa, tatoeba.spa-ara.ara]
+          outputs: [tatoeba.dedup.spa-ara.spa, tatoeba.dedup.spa-ara.ara]
+
+    - type: remove_duplicates
+      parameters:
+          inputs: [synt.spa-ara.spa, synt.spa-ara.ara]
+          outputs: [synt.dedup.spa-ara.spa, synt.dedup.spa-ara.ara]
+
+    - type: remove_duplicates
+      parameters:
+          inputs: [tatoeba.spa-ast.spa, tatoeba.spa-ast.ast]
+          outputs: [tatoeba.dedup.spa-ast.spa, tatoeba.dedup.spa-ast.ast]
+
+    - type: remove_duplicates
+      parameters:
+          inputs: [synt.spa-ast.spa, synt.spa-ast.ast]
+          outputs: [synt.dedup.spa-ast.spa, synt.dedup.spa-ast.ast]
+
+    - type: remove_duplicates
+      parameters:
+          inputs: [tatoeba.spa-arg.spa, tatoeba.spa-arg.arg]
+          outputs: [tatoeba.dedup.spa-arg.spa, tatoeba.dedup.spa-arg.arg]
+
+    - type: remove_duplicates
+      parameters:
+          inputs: [synt.spa-arg.spa, synt.spa-arg.arg]
+          outputs: [synt.dedup.spa-arg.spa, synt.dedup.spa-arg.arg]
+
+    - type: remove_duplicates
+      parameters:
+          inputs: [tatoeba.spa-oci.spa, tatoeba.spa-oci.oci]
+          outputs: [tatoeba.dedup.spa-oci.spa, tatoeba.dedup.spa-oci.oci]
+
+    - type: remove_duplicates
+      parameters:
+          inputs: [synt.spa-oci.spa, synt.spa-oci.oci]
+          outputs: [synt.dedup.spa-oci.spa, synt.dedup.spa-oci.oci]
+
+    # Remove overlaps between tatoeba and synt
+    - type: remove_duplicates
+      parameters:
+          inputs: [synt.dedup.spa-ara.spa, synt.dedup.spa-ara.ara]
+          overlap: [data/train-parts/tatoeba.dedup.spa-ara.spa, data/train-parts/tatoeba.dedup.spa-ara.ara]
+          outputs: [synt.dedup1.spa-ara.spa, synt.dedup1.spa-ara.ara]
+
+    - type: remove_duplicates
+      parameters:
+          inputs: [synt.dedup.spa-ast.spa, synt.dedup.spa-ast.ast]
+          overlap: [data/train-parts/tatoeba.dedup.spa-ast.spa, data/train-parts/tatoeba.dedup.spa-ast.ast]
+          outputs: [synt.dedup1.spa-ast.spa, synt.dedup1.spa-ast.ast]
+
+    - type: remove_duplicates
+      parameters:
+          inputs: [synt.dedup.spa-arg.spa, synt.dedup.spa-arg.arg]
+          overlap: [data/train-parts/tatoeba.dedup.spa-arg.spa, data/train-parts/tatoeba.dedup.spa-arg.arg]
+          outputs: [synt.dedup1.spa-arg.spa, synt.dedup1.spa-arg.arg]
+
+    - type: remove_duplicates
+      parameters:
+          inputs: [synt.dedup.spa-oci.spa, synt.dedup.spa-oci.oci]
+          overlap: [data/train-parts/tatoeba.dedup.spa-oci.spa, data/train-parts/tatoeba.dedup.spa-oci.oci]
+          outputs: [synt.dedup1.spa-oci.spa, synt.dedup1.spa-oci.oci]
+
+    # Remove overlaps with dev sets
+    - type: remove_duplicates
+      parameters:
+          inputs: [tatoeba.dedup.spa-ara.spa, tatoeba.dedup.spa-ara.ara]
+          overlap: [/scratch/project_2001194/lowres-spain/data/FLORES+/dev.spa, /scratch/project_2001194/lowres-spain/data/FLORES+/dev.oci_aran]
+          outputs: [tatoeba.dedup2.spa-ara.spa, tatoeba.dedup2.spa-ara.ara]
+          
+    - type: remove_duplicates
+      parameters:
+          inputs: [synt.dedup1.spa-ara.spa, synt.dedup1.spa-ara.ara]
+          overlap: [/scratch/project_2001194/lowres-spain/data/FLORES+/dev.spa, /scratch/project_2001194/lowres-spain/data/FLORES+/dev.oci_aran]
+          outputs: [synt.dedup2.spa-ara.spa, synt.dedup2.spa-ara.ara]
+
+    - type: remove_duplicates
+      parameters:
+          inputs: [tatoeba.dedup.spa-arg.spa, tatoeba.dedup.spa-arg.arg]
+          overlap: [/scratch/project_2001194/lowres-spain/data/FLORES+/dev.spa, /scratch/project_2001194/lowres-spain/data/FLORES+/dev.arg]
+          outputs: [tatoeba.dedup2.spa-arg.spa, tatoeba.dedup2.spa-arg.arg]
+          
+    - type: remove_duplicates
+      parameters:
+          inputs: [synt.dedup1.spa-arg.spa, synt.dedup1.spa-arg.arg]
+          overlap: [/scratch/project_2001194/lowres-spain/data/FLORES+/dev.spa, /scratch/project_2001194/lowres-spain/data/FLORES+/dev.arg]
+          outputs: [synt.dedup2.spa-arg.spa, synt.dedup2.spa-arg.arg]
+
+    - type: remove_duplicates
+      parameters:
+          inputs: [tatoeba.dedup.spa-ast.spa, tatoeba.dedup.spa-ast.ast]
+          overlap: [/scratch/project_2001194/lowres-spain/data/FLORES+/dev.spa, /scratch/project_2001194/lowres-spain/data/FLORES+/dev.ast]
+          outputs: [tatoeba.dedup2.spa-ast.spa, tatoeba.dedup2.spa-ast.ast]
+          
+    - type: remove_duplicates
+      parameters:
+          inputs: [synt.dedup1.spa-ast.spa, synt.dedup1.spa-ast.ast]
+          overlap: [/scratch/project_2001194/lowres-spain/data/FLORES+/dev.spa, /scratch/project_2001194/lowres-spain/data/FLORES+/dev.ast]
+          outputs: [synt.dedup2.spa-ast.spa, synt.dedup2.spa-ast.ast]
+
+    - type: remove_duplicates
+      parameters:
+          inputs: [tatoeba.dedup.spa-oci.spa, tatoeba.dedup.spa-oci.oci]
+          overlap: [/scratch/project_2001194/lowres-spain/data/FLORES+/dev.spa, /scratch/project_2001194/lowres-spain/data/FLORES+/dev.oci]
+          outputs: [tatoeba.dedup2.spa-oci.spa, tatoeba.dedup2.spa-oci.oci]
+          
+    - type: remove_duplicates
+      parameters:
+          inputs: [synt.dedup1.spa-oci.spa, synt.dedup1.spa-oci.oci]
+          overlap: [/scratch/project_2001194/lowres-spain/data/FLORES+/dev.spa, /scratch/project_2001194/lowres-spain/data/FLORES+/dev.oci]
+          outputs: [synt.dedup2.spa-oci.spa, synt.dedup2.spa-oci.oci]
+
+    # Normalize whitespace
+    - type: preprocess
+      parameters:
+          inputs: [tatoeba.dedup2.spa-ara.spa, tatoeba.dedup2.spa-ara.ara]
+          outputs: [tatoeba.whsp.spa-ara.spa, tatoeba.whsp.spa-ara.ara]
+          preprocessors:
+              - WhitespaceNormalizer: {}
+
+    - type: preprocess
+      parameters:
+          inputs: [synt.dedup2.spa-ara.spa, synt.dedup2.spa-ara.ara]
+          outputs: [synt.whsp.spa-ara.spa, synt.whsp.spa-ara.ara]
+          preprocessors:
+              - WhitespaceNormalizer: {}
+
+    - type: preprocess
+      parameters:
+          inputs: [tatoeba.dedup2.spa-arg.spa, tatoeba.dedup2.spa-arg.arg]
+          outputs: [tatoeba.whsp.spa-arg.spa, tatoeba.whsp.spa-arg.arg]
+          preprocessors:
+              - WhitespaceNormalizer: {}
+
+    - type: preprocess
+      parameters:
+          inputs: [synt.dedup2.spa-arg.spa, synt.dedup2.spa-arg.arg]
+          outputs: [synt.whsp.spa-arg.spa, synt.whsp.spa-arg.arg]
+          preprocessors:
+              - WhitespaceNormalizer: {}
+
+    - type: preprocess
+      parameters:
+          inputs: [tatoeba.dedup2.spa-ast.spa, tatoeba.dedup2.spa-ast.ast]
+          outputs: [tatoeba.whsp.spa-ast.spa, tatoeba.whsp.spa-ast.ast]
+          preprocessors:
+              - WhitespaceNormalizer: {}
+
+    - type: preprocess
+      parameters:
+          inputs: [synt.dedup2.spa-ast.spa, synt.dedup2.spa-ast.ast]
+          outputs: [synt.whsp.spa-ast.spa, synt.whsp.spa-ast.ast]
+          preprocessors:
+              - WhitespaceNormalizer: {}
+
+    - type: preprocess
+      parameters:
+          inputs: [tatoeba.dedup2.spa-oci.spa, tatoeba.dedup2.spa-oci.oci]
+          outputs: [tatoeba.whsp.spa-oci.spa, tatoeba.whsp.spa-oci.oci]
+          preprocessors:
+              - WhitespaceNormalizer: {}
+
+    - type: preprocess
+      parameters:
+          inputs: [synt.dedup2.spa-oci.spa, synt.dedup2.spa-oci.oci]
+          outputs: [synt.whsp.spa-oci.spa, synt.whsp.spa-oci.oci]
+          preprocessors:
+              - WhitespaceNormalizer: {}
+
+    # Filter
+    - type: filter
+      parameters:
+          inputs: [tatoeba.whsp.spa-ara.spa, tatoeba.whsp.spa-ara.ara]
+          outputs: [tatoeba.clean.spa-ara.spa, tatoeba.clean.spa-ara.ara]
+          filters: &lengthfilter
+              - LengthFilter:
+                  min_length: 3
+                  max_length: 150
+
+    - type: filter
+      parameters:
+          inputs: [synt.whsp.spa-ara.spa, synt.whsp.spa-ara.ara]
+          outputs: [synt.clean.spa-ara.spa, synt.clean.spa-ara.ara]
+          filters: *lengthfilter
+
+    - type: filter
+      parameters:
+          inputs: [tatoeba.whsp.spa-ast.spa, tatoeba.whsp.spa-ast.ast]
+          outputs: [tatoeba.clean.spa-ast.spa, tatoeba.clean.spa-ast.ast]
+          filters: *lengthfilter
+
+    - type: filter
+      parameters:
+          inputs: [synt.whsp.spa-ast.spa, synt.whsp.spa-ast.ast]
+          outputs: [synt.clean.spa-ast.spa, synt.clean.spa-ast.ast]
+          filters: *lengthfilter
+
+    - type: filter
+      parameters:
+          inputs: [tatoeba.whsp.spa-arg.spa, tatoeba.whsp.spa-arg.arg]
+          outputs: [tatoeba.clean.spa-arg.spa, tatoeba.clean.spa-arg.arg]
+          filters: *lengthfilter
+
+    - type: filter
+      parameters:
+          inputs: [synt.whsp.spa-arg.spa, synt.whsp.spa-arg.arg]
+          outputs: [synt.clean.spa-arg.spa, synt.clean.spa-arg.arg]
+          filters: *lengthfilter
+
+    - type: filter
+      parameters:
+          inputs: [tatoeba.whsp.spa-oci.spa, tatoeba.whsp.spa-oci.oci]
+          outputs: [tatoeba.clean.spa-oci.spa, tatoeba.clean.spa-oci.oci]
+          filters: *lengthfilter
+
+    - type: filter
+      parameters:
+          inputs: [synt.whsp.spa-oci.spa, synt.whsp.spa-oci.oci]
+          outputs: [synt.clean.spa-oci.spa, synt.clean.spa-oci.oci]
+          filters: *lengthfilter

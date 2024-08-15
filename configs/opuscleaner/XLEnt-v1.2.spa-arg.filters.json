@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "files": [
+    "XLEnt-v1.2.spa-arg.arg.gz",
+    "XLEnt-v1.2.spa-arg.spa.gz"
+  ],
+  "filters": [
+    {
+      "filter": "num_mismatch",
+      "parameters": {
+        "RATIO": 1,
+        "DEBUG": false
+      },
+      "language": null
+    }
+  ]
+}

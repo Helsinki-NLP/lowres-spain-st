@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "files": [
+    "XLEnt-v1.1.spa-oci.oci.gz",
+    "XLEnt-v1.1.spa-oci.spa.gz"
+  ],
+  "filters": [
+    {
+      "filter": "num_mismatch",
+      "parameters": {
+        "RATIO": 1,
+        "DEBUG": false
+      },
+      "language": null
+    },
+    {
+      "filter": "src_trg_ratio",
+      "parameters": {
+        "RATIO": 0.6,
+        "LOG": false
+      },
+      "language": null
+    }
+  ]
+}

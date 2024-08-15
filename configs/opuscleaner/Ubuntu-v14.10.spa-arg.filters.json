@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "files": [
+    "Ubuntu-v14.10.spa-arg.arg.gz",
+    "Ubuntu-v14.10.spa-arg.spa.gz"
+  ],
+  "filters": [
+    {
+      "filter": "alpha_ratio",
+      "parameters": {
+        "LANG1": "es",
+        "LANG2": "es",
+        "SRCWORDRAT": 0.4,
+        "TRGWORDRAT": 0.4,
+        "SRCALPHARAT": 0.5,
+        "TRGALPHARAT": 0.5,
+        "DEBUG": false
+      },
+      "language": null
+    }
+  ]
+}
