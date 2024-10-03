@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "files": [
+    "QED-v2.0a.spa-oci.oci.gz",
+    "QED-v2.0a.spa-oci.spa.gz"
+  ],
+  "filters": [
+    {
+      "filter": "src_trg_ratio",
+      "parameters": {
+        "RATIO": 0.6,
+        "LOG": false
+      },
+      "language": null
+    }
+  ]
+}

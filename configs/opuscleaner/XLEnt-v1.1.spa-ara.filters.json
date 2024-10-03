@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "files": [
+    "XLEnt-v1.1.spa-ara.ara.gz",
+    "XLEnt-v1.1.spa-ara.spa.gz"
+  ],
+  "filters": [
+    {
+      "filter": "src_trg_ratio",
+      "parameters": {
+        "RATIO": 0.6,
+        "LOG": false
+      },
+      "language": null
+    },
+    {
+      "filter": "alpha_ratio",
+      "parameters": {
+        "LANG1": "es",
+        "LANG2": "es",
+        "SRCWORDRAT": 0.4,
+        "TRGWORDRAT": 0.4,
+        "SRCALPHARAT": 0.5,
+        "TRGALPHARAT": 0.5,
+        "DEBUG": false
+      },
+      "language": null
+    }
+  ]
+}

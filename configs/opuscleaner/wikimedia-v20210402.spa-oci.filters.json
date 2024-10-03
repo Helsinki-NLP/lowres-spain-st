@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "files": [
+    "wikimedia-v20210402.spa-oci.oci.gz",
+    "wikimedia-v20210402.spa-oci.spa.gz"
+  ],
+  "filters": [
+    {
+      "filter": "regexp",
+      "parameters": {
+        "PATTERN": "s/\\[.*?\\]//g"
+      },
+      "language": "oci,spa"
+    },
+    {
+      "filter": "src_trg_ratio",
+      "parameters": {
+        "RATIO": 0.6,
+        "LOG": false
+      },
+      "language": null
+    }
+  ]
+}
