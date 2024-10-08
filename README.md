@@ -26,6 +26,10 @@ The already preprocessed and filtered training data can be safely downloaded fro
 
 The password is "Helsinki-NLP".
 
+## Models
+
+We release our fastest model from Submission 3. It can be safely downloaded from this link: https://object.pouta.csc.fi/degibert/lowres_sub_3.zip
+
 ## Citation
 
 Coming soon!
