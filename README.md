@@ -31,5 +31,25 @@ The password is "Helsinki-NLP".
 We release our fastest model from Submission 3. It can be safely downloaded from this link: https://object.pouta.csc.fi/degibert/lowres_sub_3.zip
 
 ## Citation
-
-Coming soon!
+```latex
+@inproceedings{de-gibert-etal-2024-hybrid,
+    title = "Hybrid Distillation from {RBMT} and {NMT}: {H}elsinki-{NLP}{'}s Submission to the Shared Task on Translation into Low-Resource Languages of {S}pain",
+    author = {De Gibert, Ona  and
+      Aulamo, Mikko  and
+      Scherrer, Yves  and
+      Tiedemann, J{\"o}rg},
+    editor = "Haddow, Barry  and
+      Kocmi, Tom  and
+      Koehn, Philipp  and
+      Monz, Christof",
+    booktitle = "Proceedings of the Ninth Conference on Machine Translation",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.wmt-1.88/",
+    doi = "10.18653/v1/2024.wmt-1.88",
+    pages = "908--917",
+    abstract = "The Helsinki-NLP team participated in the 2024 Shared Task on Translation into Low-Resource languages of Spain with four multilingual systems covering all language pairs. The task consists in developing Machine Translation (MT) models to translate from Spanish into Aragonese, Aranese and Asturian. Our models leverage known approaches for multilingual MT, namely, data filtering, fine-tuning, data tagging, and distillation. We use distillation to merge the knowledge from neural and rule-based systems and explore the trade-offs between translation quality and computational efficiency. We demonstrate that our distilled models can achieve competitive results while significantly reducing computational costs. Our best models ranked 4th, 5th, and 2nd in the open submission track for Spanish{--}Aragonese, Spanish{--}Aranese, and Spanish{--}Asturian, respectively. We release our code and data publicly at https://github.com/Helsinki-NLP/lowres-spain-st."
+}
+```
