@@ -31,7 +31,7 @@ The password is "Helsinki-NLP".
 We release our fastest model from Submission 3. It can be safely downloaded from this link: https://object.pouta.csc.fi/degibert/lowres_sub_3.zip
 
 ## Citation
-```latex
+```bibtex
 @inproceedings{de-gibert-etal-2024-hybrid,
     title = "Hybrid Distillation from {RBMT} and {NMT}: {H}elsinki-{NLP}{'}s Submission to the Shared Task on Translation into Low-Resource Languages of {S}pain",
     author = {De Gibert, Ona  and
